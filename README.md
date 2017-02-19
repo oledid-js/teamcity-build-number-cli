@@ -1,6 +1,6 @@
-# teamcity-build-number-cli [![Build Status](https://travis-ci.org/oledid/teamcity-build-number-cli.svg?branch=master)](https://travis-ci.org/oledid/teamcity-build-number-cli)
+# teamcity-build-number-cli [![Build Status](https://travis-ci.org/oledid-js/teamcity-build-number-cli.svg?branch=master)](https://travis-ci.org/oledid-js/teamcity-build-number-cli) [![npm](https://img.shields.io/npm/dt/teamcity-build-number-cli.svg)](https://www.npmjs.com/package/teamcity-build-number-cli) [![npm](https://img.shields.io/npm/v/teamcity-build-number-cli.svg)](https://www.npmjs.com/package/teamcity-build-number-cli)
 
-> Outputs version from package.json in TeamCity service message format
+Outputs version from package.json in TeamCity service message format.
 
 ## Install
 
@@ -35,4 +35,4 @@ teamcity-build-number path/to/package.json
 
 ## License
 
-MIT © [Ole Morten Didriksen](https://github.com/oledid)
+[MIT](LICENSE)

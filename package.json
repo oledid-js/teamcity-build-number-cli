@@ -1,16 +1,21 @@
 {
   "name": "teamcity-build-number-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Outputs version from package.json in TeamCity service message format",
+  "main": "src/api.js",
   "bin": {
     "teamcity-build-number": "src/cli.js"
   },
+  "files": [
+    "src"
+  ],
   "scripts": {
-    "test": "xo && cucumber-js"
+    "test": "xo && cucumber-js",
+    "prepublish": "in-publish && npm test || not-in-publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oledid/teamcity-build-number-cli.git"
+    "url": "git+https://github.com/oledid-js/teamcity-build-number-cli.git"
   },
   "keywords": [
     "teamcity",
@@ -23,14 +28,13 @@
   "author": "Ole Morten Didriksen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/oledid/teamcity-build-number-cli/issues"
+    "url": "https://github.com/oledid-js/teamcity-build-number-cli/issues"
   },
-  "homepage": "https://github.com/oledid/teamcity-build-number-cli#readme",
+  "homepage": "https://github.com/oledid-js/teamcity-build-number-cli#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "cucumber": "^1.2.1",
-    "cucumber-json-to-teamcity-cli": "^0.2.0",
-    "tap-teamcity": "^1.2.0",
+    "in-publish": "^2.0.0",
     "xo": "^0.16.0"
   },
   "xo": {
